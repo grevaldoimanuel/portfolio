@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <!-- Primary SEO Meta Tags -->
+  <title>Grevaldo Imanuel Dharmadi — IT Support at Shopee | Portfolio</title>
+  <meta name="title" content="Grevaldo Imanuel Dharmadi — IT Support at Shopee | Portfolio" />
+  <meta name="description" content="Official portfolio of Grevaldo Imanuel Dharmadi, IT Support at Shopee. IT graduate experienced in IT support, customer service, desktop & Android development, Windows/Linux systems, and MikroTik networking." />
+  <meta name="keywords" content="Grevaldo Imanuel Dharmadi, IT Support Shopee, IT Support Portfolio, Bekasi IT Support, MikroTik Networking, Windows Linux Support, Customer Experience Officer, Active Directory, Google Workspace, PT Shopee Internasional Indonesia, PT Concentrix, PT Mattel Indonesia, President University" />
+  <meta name="author" content="Grevaldo Imanuel Dharmadi" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#000000" id="metaThemeColor" />
+  <link rel="canonical" href="https://grevaldoimanuel.github.io/portfolio/" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://grevaldoimanuel.github.io/portfolio/" />
+  <meta property="og:title" content="Grevaldo Imanuel Dharmadi — IT Support at Shopee" />
+  <meta property="og:description" content="IT graduate experienced in IT support, customer service, desktop & Android development, Windows/Linux systems, and MikroTik networking." />
+  <meta property="og:image" content="profile.png" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Grevaldo Imanuel Dharmadi — IT Support at Shopee" />
+  <meta name="twitter:description" content="IT graduate experienced in IT support, customer service, desktop & Android development, Windows/Linux systems, and MikroTik networking." />
+  <meta name="twitter:image" content="profile.png" />
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Grevaldo Imanuel Dharmadi",
+    "jobTitle": "IT Support",
+    "worksFor": { "@type": "Organization", "name": "Shopee" },
+    "email": "mailto:grevaldom@gmail.com",
+    "telephone": "+6281311893917",
+    "address": { "@type": "PostalAddress", "addressLocality": "Bekasi", "addressCountry": "Indonesia" },
+    "alumniOf": [
+      { "@type": "EducationalOrganization", "name": "President University" },
+      { "@type": "EducationalOrganization", "name": "SMAS Pangudi Luhur Bernardus" }
+    ],
+    "knowsAbout": ["IT Support","Networking","Data Entry","Windows","Linux","Microsoft Office","Customer Relationship Management (CRM)","Active Directory","MikroTik","Google Workspace"]
+  }
+  </script>
+
+  <!-- Fonts: San Francisco Pro via system stack + SF Pro Display web fallback -->
+  <link rel="preconnect" href="https://applesocial.s3.amazonaws.com" crossorigin />
+  <link rel="stylesheet" href="https://applesocial.s3.amazonaws.com/assets/styles/fonts/san-francisco/san-francisco-display.css" />
+
+  <!-- Bootstrap 5.3 (latest) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- PWA Manifest & Meta -->
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="Grevaldo Portfolio" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="application-name" content="Grevaldo Portfolio" />
+  <link rel="apple-touch-icon" href="profile.png" />
+  <link rel="manifest" href='data:application/manifest+json,{"name":"Grevaldo Imanuel Dharmadi — Portfolio","short_name":"Grevaldo","description":"IT Support at Shopee — Portfolio","start_url":"./","display":"standalone","background_color":"#000000","theme_color":"#0a84ff","icons":[{"src":"profile.png","sizes":"512x512","type":"image/png","purpose":"any maskable"}]}' />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="profile.png" />
+</head>
+<body>
+
+  <!-- Preloader -->
+  <div class="preloader" id="preloader" aria-hidden="true">
+    <div class="preloader-inner">
+      <div class="pre-logo">G</div>
+      <div class="pre-bar"><span></span></div>
+      <p class="pre-text">Loading portfolio<span class="dots"><i>.</i><i>.</i><i>.</i></span></p>
+    </div>
+  </div>
+
+  <!-- Custom Round Cursor -->
+  <div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+  <div class="cursor-ring" id="cursorRing" aria-hidden="true"></div>
+
+  <!-- Scroll Progress Bar -->
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <!-- Floating Particles Canvas -->
+  <canvas class="particles" id="particles" aria-hidden="true"></canvas>
+
+  <!-- Liquid Morphing Blob -->
+  <svg class="liquid-blob" aria-hidden="true" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <linearGradient id="blobGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#0a84ff"/>
+        <stop offset="100%" stop-color="#5e5ce6"/>
+      </linearGradient>
+    </defs>
+    <path id="blobPath" fill="url(#blobGrad)"></path>
+  </svg>
+
+  <!-- Animated Background -->
+  <div class="bg-orbs" aria-hidden="true">
+    <span class="orb orb-1"></span>
+    <span class="orb orb-2"></span>
+    <span class="orb orb-3"></span>
+    <span class="orb orb-4"></span>
+    <div class="bg-grid"></div>
+    <div class="bg-noise"></div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="glass-nav navbar navbar-expand-lg fixed-top" id="topNav">
+    <div class="container-fluid px-3 px-lg-5">
+      <!-- LEFT: Brand -->
+      <a class="navbar-brand fw-semibold nav-brand-left" href="#hero" aria-label="Grevaldo Imanuel Dharmadi home">
+        <span class="brand-mark">GID</span>
+        <span class="brand-text">Grevaldo Imanuel Dharmadi</span>
+      </a>
+      <button class="navbar-toggler border-0" type="button" id="navToggle" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <!-- CENTER: Navigation links -->
+        <ul class="navbar-nav nav-center mx-auto align-items-lg-center gap-lg-1">
+          <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#languages">Languages</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+        <!-- RIGHT: Clock + Controls -->
+        <ul class="navbar-nav nav-right ms-auto align-items-lg-center gap-lg-1">
+          <li class="nav-item nav-clock-item d-none d-lg-flex">
+            <span class="nav-clock" id="navClock" title="Local time in Jakarta (WIB)">
+              <i class="bi bi-clock"></i><span id="navClockTime">--:--:--</span>
+            </span>
+          </li>
+          <li class="nav-item ms-lg-1">
+            <button class="icon-toggle" id="soundToggle" aria-label="Toggle sound effects" title="Toggle sound effects">
+              <i class="bi bi-volume-up-fill sound-on"></i>
+              <i class="bi bi-volume-mute-fill sound-off"></i>
+            </button>
+          </li>
+          <li class="nav-item">
+            <button class="theme-toggle theme-cycle" id="themeToggle" aria-label="Cycle theme (Light / Dark / OLED)" title="Cycle theme (T)">
+              <i class="bi bi-sun-fill theme-icon-light"></i>
+              <i class="bi bi-moon-stars-fill theme-icon-dark"></i>
+              <i class="bi bi-circle-half theme-icon-oled"></i>
+              <span class="theme-mode-label" id="themeModeLabel">Light</span>
+            </button>
+          </li>
+          <li class="nav-item">
+            <button class="icon-toggle" id="accentPickerBtn" aria-label="Pick accent theme" title="Pick accent theme">
+              <i class="bi bi-palette-fill"></i>
+            </button>
+          </li>
+          <li class="nav-item">
+            <button class="icon-toggle" id="cmdkBtn" aria-label="Open command palette" title="Command palette (Ctrl+K)">
+              <i class="bi bi-command"></i>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- HERO -->
+    <section id="hero" class="hero section-pad">
+      <div class="container">
+        <div class="hero-inner text-center">
+          <div class="profile-wrap reveal zoom-in" data-reveal>
+            <div class="profile-ring">
+              <img src="profile.png" alt="Grevaldo Imanuel Dharmadi profile photo" class="profile-img" onerror="this.style.display='none';this.parentElement.classList.add('no-img');" />
+              <span class="profile-glow"></span>
+            </div>
+          </div>
+          <p class="hero-eyebrow reveal" data-reveal>IT SUPPORT · SHOPEE</p>
+          <h1 class="hero-title reveal glitch" data-reveal data-scramble data-glitch>Grevaldo Imanuel<br/>Dharmadi</h1>
+          <p class="hero-summary reveal" data-reveal data-typewriter>
+            An IT graduate with a strong dedication to continuous learning and a keen curiosity about technological innovation. Experienced in IT support and customer service roles, with hands-on expertise in developing desktop and Android applications. Demonstrates proficiency in Windows and Linux systems, along with practical skills in network configuration, particularly using MikroTik technologies.
+          </p>
+          <div class="hero-meta reveal" data-reveal>
+            <span class="meta-pill"><i class="bi bi-geo-alt-fill"></i> Bekasi, Indonesia</span>
+            <button class="meta-pill" data-copy="phone" data-value="+6281311893917" type="button"><i class="bi bi-telephone-fill"></i> +6281311893917</button>
+            <button class="meta-pill" data-copy="email" data-value="grevaldom@gmail.com" type="button"><i class="bi bi-envelope-fill"></i> grevaldom@gmail.com</button>
+          </div>
+          <div class="hero-cta reveal" data-reveal>
+            <a href="#experience" class="btn btn-primary-glass magnetic" data-ripple>View Experience <i class="bi bi-arrow-down-short"></i></a>
+            <a href="#contact" class="btn btn-ghost-glass magnetic" data-ripple>Get in Touch</a>
+            <button class="btn btn-ghost-glass magnetic" data-ripple id="downloadResume" type="button"><i class="bi bi-download"></i> Download Resume</button>
+          </div>
+          <div class="scroll-hint" aria-hidden="true">
+            <span class="mouse"><span class="wheel"></span></span>
+            <span class="scroll-text">Scroll</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section-pad">
+      <div class="container">
+        <div class="section-head text-center reveal" data-reveal>
+          <span class="section-kicker">Profile</span>
+          <h2 class="section-title">About Me</h2>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-9">
+            <div class="glass-card p-4 p-md-5 reveal" data-reveal>
+              <p class="about-lead">
+                An IT graduate with a strong dedication to continuous learning and a keen curiosity about technological innovation. Experienced in IT support and customer service roles, with hands-on expertise in developing desktop and Android applications. Demonstrates proficiency in Windows and Linux systems, along with practical skills in network configuration, particularly using MikroTik technologies.
+              </p>
+              <div class="row g-3 mt-2">
+                <div class="col-6 col-md-3">
+                  <div class="mini-stat" data-spotlight><i class="bi bi-briefcase-fill"></i><span class="counter" data-target="3">0</span> <small>Roles</small></div>
+                </div>
+                <div class="col-6 col-md-3">
+                  <div class="mini-stat" data-spotlight><i class="bi bi-pc-display"></i><span>IT</span></div>
+                </div>
+                <div class="col-6 col-md-3">
+                  <div class="mini-stat" data-spotlight><i class="bi bi-router-fill"></i><span>CX Experience</span></div>
+                </div>
+                <div class="col-6 col-md-3">
+                  <div class="mini-stat" data-spotlight><i class="bi bi-people-fill"></i><span>Data Analyst</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section-pad">
+      <div class="container">
+        <div class="section-head text-center reveal" data-reveal>
+          <span class="section-kicker">Career</span>
+          <h2 class="section-title">Work Experience</h2>
+        </div>
+
+        <div class="timeline">
+
+          <!-- 1 -->
+          <div class="timeline-item reveal" data-reveal>
+            <div class="timeline-dot"><i class="bi bi-hdd-network"></i></div>
+            <div class="glass-card timeline-card p-4 p-md-4">
+              <div class="d-flex flex-wrap justify-content-between gap-2 mb-2">
+                <h3 class="role-title">IT Support</h3>
+                <span class="role-date">February 2026 — Present</span>
+              </div>
+              <p class="role-company">PT Shopee International Indonesia</p>
+              <ul class="role-list">
+                <li>Delivered day-to-day IT technical support to end users, ensuring the reliable operation of workstations, network-connected devices, and printers within the organizational environment.</li>
+                <li>Diagnosed and resolved end-user software and application issues, while maintaining and regularly updating comprehensive technical support documentation and troubleshooting records.</li>
+                <li>Managed IT asset lifecycle and inventory tracking, maintaining accurate records of hardware and software assets and coordinating procurement and technical services with external vendors.</li>
+                <li>Monitored and maintained office network infrastructure, including connectivity, endpoint security configurations, and antivirus solutions to ensure stable and secure IT operations.</li>
+                <li>Provided first-level technical support for server operations, including scheduled backup procedures, routine system monitoring, and preparation of operational status reports.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- 2 -->
+          <div class="timeline-item reveal" data-reveal>
+            <div class="timeline-dot"><i class="bi bi-headset"></i></div>
+            <div class="glass-card timeline-card p-4 p-md-4">
+              <div class="d-flex flex-wrap justify-content-between gap-2 mb-2">
+                <h3 class="role-title">Advisor 1</h3>
+                <span class="role-date">October 2025 — January 2026</span>
+              </div>
+              <p class="role-company">PT Concentrix Services Indonesia</p>
+              <ul class="role-list">
+                <li>Engaged with customers through email and digital messaging platforms, responding to inquiries, providing detailed information, and delivering timely assistance to ensure a positive customer experience.</li>
+                <li>Assisted customers in navigating company products and services, addressing questions, concerns, and technical issues while offering clear guidance and practical solutions.</li>
+                <li>Diagnosed and resolved customer service and technical support issues, escalating complex or specialized cases to senior support teams when necessary to ensure efficient resolution.</li>
+                <li>Maintained a consistently high standard of professional communication and customer service etiquette across all customer interactions.</li>
+                <li>Accurately documented customer interactions and service activities, including inquiry details, troubleshooting steps, solutions provided, and required follow-up actions within support records.</li>
+                <li>Achieved and consistently met key performance indicators (KPIs), including response time targets, customer satisfaction ratings, and high-volume email handling metrics.</li>
+                <li>Continuously updated product knowledge and company policy awareness to ensure customers received accurate, relevant, and up-to-date information.</li>
+                <li>Collaborated with cross-functional teams and internal departments to ensure consistent, efficient, and high-quality customer support delivery.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- 3 -->
+          <div class="timeline-item reveal" data-reveal>
+            <div class="timeline-dot"><i class="bi bi-chat-heart"></i></div>
+            <div class="glass-card timeline-card p-4 p-md-4">
+              <div class="d-flex flex-wrap justify-content-between gap-2 mb-2">
+                <h3 class="role-title">Customer Experience Officer</h3>
+                <span class="role-date">June 2024 — October 2025</span>
+              </div>
+              <p class="role-company">PT Shopee International Indonesia</p>
+              <ul class="role-list">
+                <li>Managed the end-to-end customer service process, handling inquiries, requests, and complaints through multiple communication channels, including email and live chat, while ensuring timely and professional responses.</li>
+                <li>Investigated, managed, and resolved customer-related issues and escalations, delivering effective solutions while maintaining a high standard of customer satisfaction and service quality.</li>
+                <li>Represented the voice of the customer by communicating user feedback, concerns, and recurring issues to internal teams to support service improvements and business decision-making.</li>
+                <li>Analyzed customer experience reports, service metrics, and user insights to identify trends, propose process improvements, and initiate strategies aimed at enhancing overall customer satisfaction and operational efficiency.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- 4 -->
+          <div class="timeline-item reveal" data-reveal>
+            <div class="timeline-dot"><i class="bi bi-tools"></i></div>
+            <div class="glass-card timeline-card p-4 p-md-4">
+              <div class="d-flex flex-wrap justify-content-between gap-2 mb-2">
+                <h3 class="role-title">IT Support</h3>
+                <span class="role-date">July 2021 — January 2022</span>
+              </div>
+              <p class="role-company">PT Mattel Indonesia</p>
+              <ul class="role-list">
+                <li>Performed comprehensive IT troubleshooting and maintenance for client hardware and software systems, ensuring reliable workstation performance and minimizing operational downtime.</li>
+                <li>Provided technical guidance and consultation to clients on IT-related matters, delivering clear solutions and practical recommendations for system usage and issue resolution.</li>
+                <li>Delivered daily technical support to end users, maintaining the stable operation of workstations, printers, and network-connected devices within the organizational environment.</li>
+                <li>Diagnosed and resolved software and application issues, while maintaining accurate, well-structured, and up-to-date technical support documentation and service records.</li>
+                <li>Managed IT asset inventory, maintained detailed tracking records for hardware and software resources, and coordinated procurement or technical assistance with external vendors and service providers.</li>
+                <li>Monitored and maintained office network infrastructure, including system connectivity, endpoint security policies, and antivirus protection to ensure stable and secure IT operations.</li>
+                <li>Provided first-level operational support for server maintenance, including scheduled backup processes, system monitoring, and reporting to ensure data integrity and system availability.</li>
+                <li>Configured and administered network connectivity for clients, including provisioning internet access, configuring MikroTik routers and wireless access points, and implementing user network access controls and basic network security policies.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- 5 -->
+          <div class="timeline-item reveal" data-reveal>
+            <div class="timeline-dot"><i class="bi bi-journal-text"></i></div>
+            <div class="glass-card timeline-card p-4 p-md-4">
+              <div class="d-flex flex-wrap justify-content-between gap-2 mb-2">
+                <h3 class="role-title">Data Entry</h3>
+                <span class="role-date">April 2021 — May 2021</span>
+              </div>
+              <p class="role-company">Lembaga Riset dan Pengabdian kepada Masyarakat</p>
+              <ul class="role-list">
+                <li>Organized and categorized academic journals to support efficient editorial processing and publication workflows.</li>
+                <li>Ensured accurate data entry and indexing of journal records within the server-based database system.</li>
+                <li>Performed routine verification, monitoring, and maintenance of the journal database to ensure data integrity and system reliability.</li>
+                <li>Prepared and managed official documentation, including cover letters and library publication agreements, in accordance with institutional standards.</li>
+                <li>Reviewed and validated document metadata and required attributes to ensure completeness, consistency, and compliance with publication requirements.</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="section-pad">
+      <div class="container">
+        <div class="section-head text-center reveal" data-reveal>
+          <span class="section-kicker">Academic</span>
+          <h2 class="section-title">Education</h2>
+        </div>
+        <div class="row g-4 justify-content-center">
+          <div class="col-md-6 col-lg-5">
+            <div class="glass-card edu-card p-4 p-md-5 h-100 reveal" data-reveal>
+              <div class="edu-icon"><i class="bi bi-mortarboard-fill"></i></div>
+              <h3 class="edu-name">President University</h3>
+              <p class="edu-field">Information Technology</p>
+              <span class="edu-year">2018 — 2022</span>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-5">
+            <div class="glass-card edu-card p-4 p-md-5 h-100 reveal" data-reveal>
+              <div class="edu-icon"><i class="bi bi-book-fill"></i></div>
+              <h3 class="edu-name">SMAS Pangudi Luhur Bernardus</h3>
+              <p class="edu-field">Natural Sciences</p>
+              <span class="edu-year">2015 — 2018</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section-pad">
+      <div class="container">
+        <div class="section-head text-center reveal" data-reveal>
+          <span class="section-kicker">Capabilities</span>
+          <h2 class="section-title">Skills</h2>
+        </div>
+        <div class="skill-grid">
+          <div class="glass-card skill-chip reveal" data-reveal data-spotlight><i class="bi bi-display-fill"></i><span>IT Support</span></div>
+          <div class="glass-card skill-chip reveal" data-reveal data-spotlight><i class="bi bi-hdd-network-fill"></i><span>Networking</span></div>
+          <div class="glass-card skill-chip reveal" data-reveal data-spotlight><i class="bi bi-keyboard-fill"></i><span>Data Entry</span></div>
+          <div class="glass-card skill-chip reveal" data-reveal data-spotlight><i class="bi bi-windows"></i><span>Windows</span></div>
+          <div class="glass-card skill-chip reveal" data-reveal data-spotlight><i class="bi bi-ubuntu"></i><span>Linux</span></div>
+          <div class="glass-card skill-chip reveal" data-reveal data-spotlight><i class="bi bi-file-earmark-text-fill"></i><span>Microsoft Office</span></div>
+          <div class="glass-card skill-chip reveal" data-reveal data-spotlight><i class="bi bi-people-fill"></i><span>Customer Relationship Management (CRM)</span></div>
+          <div class="glass-card skill-chip reveal" data-reveal data-spotlight><i class="bi bi-diagram-3-fill"></i><span>Active Directory</span></div>
+          <div class="glass-card skill-chip reveal" data-reveal data-spotlight><i class="bi bi-router-fill"></i><span>MikroTik</span></div>
+          <div class="glass-card skill-chip reveal" data-reveal data-spotlight><i class="bi bi-google"></i><span>Google Workspace</span></div>
+        </div>
+
+        <!-- Marquee ticker -->
+        <div class="skill-marquee reveal" data-reveal aria-hidden="true">
+          <div class="marquee-track">
+            <span>IT Support</span><span class="dot">•</span>
+            <span>Networking</span><span class="dot">•</span>
+            <span>Data Entry</span><span class="dot">•</span>
+            <span>Windows</span><span class="dot">•</span>
+            <span>Linux</span><span class="dot">•</span>
+            <span>Microsoft Office</span><span class="dot">•</span>
+            <span>Customer Relationship Management (CRM)</span><span class="dot">•</span>
+            <span>Active Directory</span><span class="dot">•</span>
+            <span>MikroTik</span><span class="dot">•</span>
+            <span>Google Workspace</span><span class="dot">•</span>
+            <span>IT Support</span><span class="dot">•</span>
+            <span>Networking</span><span class="dot">•</span>
+            <span>Data Entry</span><span class="dot">•</span>
+            <span>Windows</span><span class="dot">•</span>
+            <span>Linux</span><span class="dot">•</span>
+            <span>Microsoft Office</span><span class="dot">•</span>
+            <span>Customer Relationship Management (CRM)</span><span class="dot">•</span>
+            <span>Active Directory</span><span class="dot">•</span>
+            <span>MikroTik</span><span class="dot">•</span>
+            <span>Google Workspace</span><span class="dot">•</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LANGUAGES -->
+    <section id="languages" class="section-pad">
+      <div class="container">
+        <div class="section-head text-center reveal" data-reveal>
+          <span class="section-kicker">Communication</span>
+          <h2 class="section-title">Languages</h2>
+        </div>
+        <div class="row g-4 justify-content-center">
+          <div class="col-md-6 col-lg-5">
+            <div class="glass-card lang-card p-4 p-md-5 h-100 reveal" data-reveal>
+              <div class="d-flex align-items-center justify-content-between mb-3">
+                <div class="d-flex align-items-center gap-3">
+                  <span class="lang-flag">ID</span>
+                  <div>
+                    <h3 class="lang-name mb-0">Indonesian</h3>
+                    <small class="lang-level">Native or Bilingual</small>
+                  </div>
+                </div>
+                <i class="bi bi-translate lang-ico"></i>
+              </div>
+              <div class="lang-bar"><span style="width:100%"></span></div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-5">
+            <div class="glass-card lang-card p-4 p-md-5 h-100 reveal" data-reveal>
+              <div class="d-flex align-items-center justify-content-between mb-3">
+                <div class="d-flex align-items-center gap-3">
+                  <span class="lang-flag">EN</span>
+                  <div>
+                    <h3 class="lang-name mb-0">English</h3>
+                    <small class="lang-level">Fluent</small>
+                  </div>
+                </div>
+                <i class="bi bi-translate lang-ico"></i>
+              </div>
+              <div class="lang-bar"><span style="width:88%"></span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section-pad">
+      <div class="container">
+        <div class="section-head text-center reveal" data-reveal>
+          <span class="section-kicker">Connect</span>
+          <h2 class="section-title">Get in Touch</h2>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-9">
+            <div class="glass-card p-4 p-md-5 reveal" data-reveal>
+              <div class="row g-3 text-center text-md-start">
+                <div class="col-md-4">
+                  <div class="contact-block">
+                    <i class="bi bi-geo-alt-fill"></i>
+                    <h4>Location</h4>
+                    <p>Bekasi, Indonesia</p>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="contact-block">
+                    <i class="bi bi-telephone-fill"></i>
+                    <h4>Phone</h4>
+                    <p><a href="tel:+6281311893917">+6281311893917</a></p>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="contact-block">
+                    <i class="bi bi-envelope-fill"></i>
+                    <h4>Email</h4>
+                    <p><a href="mailto:grevaldom@gmail.com">grevaldom@gmail.com</a></p>
+                  </div>
+                </div>
+              </div>
+              <div class="text-center mt-4">
+                <a href="mailto:grevaldom@gmail.com" class="btn btn-primary-glass magnetic" data-ripple><i class="bi bi-send-fill"></i> Email Me</a>
+                <a href="tel:+6281311893917" class="btn btn-ghost-glass magnetic" data-ripple><i class="bi bi-telephone-fill"></i> Call Me</a>
+                <button class="btn btn-ghost-glass magnetic" data-ripple id="qrBtn" type="button"><i class="bi bi-qr-code"></i> Save Contact (QR)</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container text-center">
+      <p class="footer-name">Grevaldo Imanuel Dharmadi</p>
+      <p class="footer-tag">IT Support · Shopee</p>
+      <p class="footer-copy">&copy; <span id="year">2026</span> Grevaldo Imanuel Dharmadi. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top" title="Back to top">
+    <i class="bi bi-arrow-up-short"></i>
+  </button>
+
+  <!-- Floating Quick-Contact Dock -->
+  <div class="quick-dock" id="quickDock" aria-hidden="false">
+    <button class="dock-fab" id="dockFab" aria-label="Open quick menu" aria-expanded="false" type="button">
+      <i class="bi bi-plus-lg"></i>
+    </button>
+    <div class="dock-menu" id="dockMenu">
+      <a class="dock-item" href="mailto:grevaldom@gmail.com" data-tip="Email Me"><i class="bi bi-envelope-fill"></i></a>
+      <a class="dock-item" href="tel:+6281311893917" data-tip="Call Me"><i class="bi bi-telephone-fill"></i></a>
+      <a class="dock-item" href="https://wa.me/6281311893917" target="_blank" rel="noopener" data-tip="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+      <a class="dock-item" href="#contact" data-tip="Contact"><i class="bi bi-chat-dots-fill"></i></a>
+      <button class="dock-item" id="dockTop" data-tip="Back to Top" type="button"><i class="bi bi-arrow-up-short"></i></button>
+    </div>
+  </div>
+
+  <!-- Toast container -->
+  <div class="toast-container" id="toastContainer" aria-live="polite" aria-atomic="true"></div>
+
+  <!-- Konami hint (hidden) -->
+  <div class="konami-hint" id="konamiHint" aria-hidden="true">Try the Konami code: &uarr; &uarr; &darr; &darr; &larr; &rarr; &larr; &rarr; B A</div>
+
+  <!-- Section progress bars (auto-generated) -->
+  <div class="section-progress-rail" id="sectionProgressRail" aria-hidden="true"></div>
+
+  <!-- Theme Picker Popover -->
+  <div class="theme-picker-backdrop" id="themePickerBackdrop" aria-hidden="true"></div>
+  <div class="theme-picker-popover" id="themePicker" role="dialog" aria-modal="false" aria-labelledby="tpTitle" aria-hidden="true">
+    <div class="tp-header">
+      <h4 class="tp-title" id="tpTitle"><i class="bi bi-palette-fill"></i> Accent Theme</h4>
+      <button class="tp-close" id="tpClose" type="button" aria-label="Close"><i class="bi bi-x-lg"></i></button>
+    </div>
+    <div class="tp-swatches">
+      <button class="tp-swatch" data-accent="blue" style="--c1:#0a84ff;--c2:#5e5ce6" title="iOS Blue"><span></span><small>Blue</small></button>
+      <button class="tp-swatch" data-accent="purple" style="--c1:#bf5af2;--c2:#5e5ce6" title="Purple Haze"><span></span><small>Purple</small></button>
+      <button class="tp-swatch" data-accent="pink" style="--c1:#ff375f;--c2:#bf5af2" title="Hot Pink"><span></span><small>Pink</small></button>
+      <button class="tp-swatch" data-accent="orange" style="--c1:#ff9f0a;--c2:#ff375f" title="Sunset"><span></span><small>Sunset</small></button>
+      <button class="tp-swatch" data-accent="green" style="--c1:#30d158;--c2:#0a84ff" title="Mint"><span></span><small>Mint</small></button>
+      <button class="tp-swatch" data-accent="teal" style="--c1:#64d2ff;--c2:#5e5ce6" title="Teal"><span></span><small>Teal</small></button>
+    </div>
+    <p class="tp-hint">Pick an accent — preference is saved automatically.</p>
+  </div>
+
+  <!-- Command Palette -->
+  <div class="cmdk-backdrop" id="cmdkBackdrop" aria-hidden="true"></div>
+  <div class="cmdk" id="cmdk" role="dialog" aria-modal="true" aria-labelledby="cmdkTitle" aria-hidden="true">
+    <div class="cmdk-inner glass-card">
+      <div class="cmdk-header">
+        <i class="bi bi-search"></i>
+        <input type="text" id="cmdkInput" class="cmdk-input" placeholder="Search sections, actions, shortcuts..." autocomplete="off" spellcheck="false" />
+        <kbd class="cmdk-esc">Esc</kbd>
+      </div>
+      <div class="cmdk-list" id="cmdkList" role="listbox"></div>
+      <div class="cmdk-footer">
+        <span><kbd>&uarr;</kbd><kbd>&darr;</kbd> navigate</span>
+        <span><kbd>&#8629;</kbd> select</span>
+        <span><kbd>Ctrl</kbd>+<kbd>K</kbd> toggle</span>
+      </div>
+    </div>
+    <h2 id="cmdkTitle" class="visually-hidden">Command palette</h2>
+  </div>
+
+  <!-- Keyboard shortcuts hint button -->
+  <button class="shortcuts-fab" id="shortcutsFab" type="button" aria-label="Keyboard shortcuts" title="Keyboard shortcuts (?)">
+    <i class="bi bi-keyboard-fill"></i>
+  </button>
+
+  <!-- Keyboard shortcuts modal -->
+  <div class="shortcuts-modal" id="shortcutsModal" role="dialog" aria-modal="true" aria-labelledby="shortcutsTitle" aria-hidden="true">
+    <div class="shortcuts-inner glass-card">
+      <div class="shortcuts-head">
+        <h3 id="shortcutsTitle"><i class="bi bi-keyboard-fill"></i> Keyboard Shortcuts</h3>
+        <button class="shortcuts-close" id="shortcutsClose" aria-label="Close"><i class="bi bi-x-lg"></i></button>
+      </div>
+      <div class="shortcuts-grid">
+        <div class="sc-row"><kbd>Ctrl</kbd>+<kbd>K</kbd><span>Open command palette</span></div>
+        <div class="sc-row"><kbd>?</kbd><span>Show this shortcuts dialog</span></div>
+        <div class="sc-row"><kbd>Esc</kbd><span>Close any open modal / popover</span></div>
+        <div class="sc-row"><kbd>/</kbd><span>Focus command palette search</span></div>
+        <div class="sc-row"><kbd>N</kbd><span>Toggle focus mode (hide all floating UI)</span></div>
+        <div class="sc-row"><kbd>Z</kbd><span>Toggle custom cursor on / off</span></div>
+        <div class="sc-row"><kbd>U</kbd><span>Copy page URL to clipboard</span></div>
+        <div class="sc-row"><kbd>J</kbd><span>Scroll to next section</span></div>
+        <div class="sc-row"><kbd>K</kbd><span>Scroll to previous section</span></div>
+        <div class="sc-row"><kbd>G</kbd> <kbd>H</kbd><span>Go to Home</span></div>
+        <div class="sc-row"><kbd>G</kbd> <kbd>A</kbd><span>Go to About</span></div>
+        <div class="sc-row"><kbd>G</kbd> <kbd>E</kbd><span>Go to Experience</span></div>
+        <div class="sc-row"><kbd>G</kbd> <kbd>D</kbd><span>Go to Education</span></div>
+        <div class="sc-row"><kbd>G</kbd> <kbd>S</kbd><span>Go to Skills</span></div>
+        <div class="sc-row"><kbd>G</kbd> <kbd>L</kbd><span>Go to Languages</span></div>
+        <div class="sc-row"><kbd>G</kbd> <kbd>C</kbd><span>Go to Contact</span></div>
+        <div class="sc-row"><kbd>T</kbd><span>Cycle theme: Light &rarr; Dark &rarr; OLED (press repeatedly to switch between 3 modes)</span></div>
+        <div class="sc-row"><kbd>W</kbd><span>Open accent color picker (6 color presets)</span></div>
+        <div class="sc-row"><kbd>A</kbd><span>Enable / disable auto theme (time-based: light by day, dark by evening, OLED by night)</span></div>
+        <div class="sc-row"><kbd>M</kbd><span>Toggle sound effects (click &amp; hover sounds)</span></div>
+        <div class="sc-row"><kbd>P</kbd><span>Toggle ambient music (lo-fi pad + bells)</span></div>
+        <div class="sc-row"><kbd>V</kbd><span>Voice navigation (start microphone, speak commands)</span></div>
+        <div class="sc-row"><kbd>Shift</kbd>+<kbd>A</kbd><span>Open AI assistant (alternative)</span></div>
+        <div class="sc-row"><kbd>I</kbd><span>Toggle AI assistant chat widget</span></div>
+        <div class="sc-row"><kbd>Q</kbd><span>Open Quick Contact dock (Email, Call, WhatsApp, Contact, Top)</span></div>
+        <div class="sc-row"><kbd>C</kbd><span>Show contact QR code (scan with phone camera to save vCard)</span></div>
+        <div class="sc-row"><kbd>R</kbd><span>Download resume as PDF (opens print dialog)</span></div>
+        <div class="sc-row"><kbd>B</kbd><span>Back to top (smooth scroll with rocket animation)</span></div>
+        <div class="sc-row"><kbd>S</kbd><span>Play Snake mini-game</span></div>
+        <div class="sc-row"><kbd>Y</kbd><span>Typing speed test (measure WPM &amp; accuracy)</span></div>
+        <div class="sc-row"><kbd>G</kbd><span>Achievement gallery (view all unlocked &amp; locked achievements)</span></div>
+        <div class="sc-row"><kbd>O</kbd><span>View achievements summary (toast with progress count)</span></div>
+        <div class="sc-row"><kbd>F</kbd><span>Toggle FPS counter (real-time performance monitor)</span></div>
+        <div class="sc-row"><kbd>X</kbd><span>Matrix rain easter egg (full-screen animation)</span></div>
+        <div class="sc-row"><kbd>Space</kbd><span>Pause / resume Snake game</span></div>
+        <div class="sc-row"><kbd>&uarr;</kbd><kbd>&darr;</kbd><span>Navigate command palette items</span></div>
+        <div class="sc-row"><kbd>Enter</kbd><span>Select command in palette</span></div>
+        <div class="sc-row"><kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd> / <kbd>&uarr;&darr;&larr;&rarr;</kbd><span>Snake game controls (direction)</span></div>
+        <div class="sc-row"><kbd>&uarr; &uarr; &darr; &darr; &larr; &rarr; &larr; &rarr; B A</kbd><span>Secret confetti (Konami code &mdash; rainbow explosion)</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Page transition overlay -->
+  <div class="page-transition" id="pageTransition" aria-hidden="true"></div>
+
+  <!-- Idle indicator -->
+  <div class="idle-indicator" id="idleIndicator" aria-hidden="true">
+    <i class="bi bi-moon-stars"></i>
+    <span>Tap anywhere to wake</span>
+  </div>
+
+  <!-- Voice Navigation Mic Button -->
+  <button class="voice-fab" id="voiceFab" type="button" aria-label="Voice navigation" title="Voice navigation (V)">
+    <i class="bi bi-mic-fill"></i>
+    <span class="voice-pulse" aria-hidden="true"></span>
+  </button>
+  <div class="voice-status" id="voiceStatus" aria-hidden="true">
+    <i class="bi bi-mic-fill"></i>
+    <span id="voiceStatusText">Listening...</span>
+  </div>
+
+  <!-- AI Chat Assistant Widget -->
+  <button class="ai-fab" id="aiFab" type="button" aria-label="Open AI assistant" title="AI Assistant (A)">
+    <i class="bi bi-robot"></i>
+    <span class="ai-badge" aria-hidden="true">1</span>
+  </button>
+  <div class="ai-chat" id="aiChat" role="dialog" aria-modal="false" aria-labelledby="aiChatTitle" aria-hidden="true">
+    <div class="ai-chat-inner glass-card">
+      <div class="ai-chat-head">
+        <div class="ai-avatar"><i class="bi bi-robot"></i></div>
+        <div class="ai-meta">
+          <h3 id="aiChatTitle">Portfolio Assistant</h3>
+          <span class="ai-status"><span class="ai-dot"></span> Online</span>
+        </div>
+        <button class="ai-close" id="aiClose" aria-label="Close assistant"><i class="bi bi-x-lg"></i></button>
+      </div>
+      <div class="ai-chat-body" id="aiChatBody" aria-live="polite">
+        <div class="ai-msg ai-bot">
+          <div class="ai-msg-avatar"><i class="bi bi-robot"></i></div>
+          <div class="ai-msg-bubble">
+            Hi! I'm Grevaldo's portfolio assistant. Ask me about his experience, skills, education, or how to contact him. You can also try the quick suggestions below.
+          </div>
+        </div>
+      </div>
+      <div class="ai-suggestions" id="aiSuggestions">
+        <button class="ai-sugg" data-q="Tell me about Grevaldo">About</button>
+        <button class="ai-sugg" data-q="What work experience does he have?">Experience</button>
+        <button class="ai-sugg" data-q="What skills does he have?">Skills</button>
+        <button class="ai-sugg" data-q="How can I contact him?">Contact</button>
+      </div>
+      <div class="ai-chat-input">
+        <input type="text" id="aiInput" placeholder="Ask anything..." autocomplete="off" />
+        <button id="aiSend" aria-label="Send"><i class="bi bi-send-fill"></i></button>
+      </div>
+    </div>
+  </div>
+
+  <!-- QR VCard Modal -->
+  <div class="qr-modal" id="qrModal" role="dialog" aria-modal="true" aria-labelledby="qrTitle" aria-hidden="true">
+    <div class="qr-inner glass-card">
+      <div class="qr-head">
+        <h3 id="qrTitle"><i class="bi bi-qr-code"></i> Save Contact</h3>
+        <button class="qr-close" id="qrClose" aria-label="Close"><i class="bi bi-x-lg"></i></button>
+      </div>
+      <div class="qr-body">
+        <div class="qr-canvas" id="qrCanvas"></div>
+        <p class="qr-hint">Scan with your phone camera to save Grevaldo's contact directly to your address book.</p>
+        <div class="qr-actions">
+          <button class="btn btn-primary-glass" id="qrVcf" type="button"><i class="bi bi-download"></i> Download .vcf</button>
+          <button class="btn btn-ghost-glass" id="qrCopy" type="button"><i class="bi bi-clipboard"></i> Copy vCard</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Music ambient toggle -->
+  <button class="music-fab" id="musicFab" type="button" aria-label="Toggle ambient music" title="Ambient music (P)">
+    <i class="bi bi-music-note-list"></i>
+  </button>
+
+  <!-- Per-section share buttons container (auto-injected) -->
+
+  <!-- Typing Speed Test Modal -->
+  <div class="typing-modal" id="typingModal" role="dialog" aria-modal="true" aria-labelledby="typingTitle" aria-hidden="true">
+    <div class="typing-inner glass-card">
+      <div class="typing-head">
+        <h3 id="typingTitle"><i class="bi bi-keyboard-fill"></i> Typing Speed Test</h3>
+        <button class="typing-close" id="typingClose" aria-label="Close"><i class="bi bi-x-lg"></i></button>
+      </div>
+      <div class="typing-stats">
+        <div class="ts-stat"><span>WPM</span><b id="typingWpm">0</b></div>
+        <div class="ts-stat"><span>Accuracy</span><b id="typingAcc">100%</b></div>
+        <div class="ts-stat"><span>Time</span><b id="typingTime">0s</b></div>
+        <div class="ts-stat"><span>Best WPM</span><b id="typingBest">0</b></div>
+      </div>
+      <div class="typing-text" id="typingText" tabindex="0"></div>
+      <div class="typing-input-wrap">
+        <input type="text" id="typingInput" placeholder="Start typing..." autocomplete="off" autocapitalize="off" spellcheck="false" disabled />
+      </div>
+      <div class="typing-controls">
+        <button class="btn btn-primary-glass" id="typingStart" type="button"><i class="bi bi-play-fill"></i> Start Test</button>
+        <select id="typingMode" class="typing-mode">
+          <option value="bio">About (Bio)</option>
+          <option value="skills">Skills List</option>
+          <option value="quote">Inspiration Quote</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <!-- Achievement Gallery Modal -->
+  <div class="ach-gallery-modal" id="achGalleryModal" role="dialog" aria-modal="true" aria-labelledby="achGalleryTitle" aria-hidden="true">
+    <div class="ach-gallery-inner glass-card">
+      <div class="ach-gallery-head">
+        <h3 id="achGalleryTitle"><i class="bi bi-trophy-fill"></i> Achievements <span class="ach-counter" id="achCounter">0/0</span></h3>
+        <button class="ach-gallery-close" id="achGalleryClose" aria-label="Close"><i class="bi bi-x-lg"></i></button>
+      </div>
+      <div class="ach-progress-bar"><span id="achProgressBar"></span></div>
+      <div class="ach-grid" id="achGrid"></div>
+    </div>
+  </div>
+
+  <!-- Matrix Rain Canvas (hidden by default) -->
+  <canvas class="matrix-rain" id="matrixRain" aria-hidden="true"></canvas>
+
+  <!-- Geolocation greeting banner -->
+  <div class="geo-greeting" id="geoGreeting" aria-live="polite" aria-hidden="true">
+    <i class="bi bi-geo-alt-fill"></i>
+    <span id="geoGreetingText"></span>
+  </div>
+
+  <!-- Skill Radar Chart (in About section, auto-injected) -->
+
+  <!-- Snake Game Modal -->
+  <div class="snake-modal" id="snakeModal" role="dialog" aria-modal="true" aria-labelledby="snakeTitle" aria-hidden="true">
+    <div class="snake-inner glass-card">
+      <div class="snake-head">
+        <h3 id="snakeTitle"><i class="bi bi-controller"></i> Snake Game</h3>
+        <div class="snake-stats">
+          <span>Score: <b id="snakeScore">0</b></span>
+          <span>Best: <b id="snakeBest">0</b></span>
+        </div>
+        <button class="snake-close" id="snakeClose" aria-label="Close"><i class="bi bi-x-lg"></i></button>
+      </div>
+      <canvas id="snakeCanvas" width="400" height="400" class="snake-canvas"></canvas>
+      <div class="snake-controls">
+        <button class="btn btn-primary-glass" id="snakeStart" type="button"><i class="bi bi-play-fill"></i> Start</button>
+        <button class="btn btn-ghost-glass" id="snakePause" type="button"><i class="bi bi-pause-fill"></i> Pause</button>
+        <p class="snake-hint">Use arrow keys or WASD. Press Space to pause.</p>
+      </div>
+      <div class="snake-dpad" aria-hidden="true">
+        <button class="dpad-btn dpad-up" data-dir="up"><i class="bi bi-arrow-up-short"></i></button>
+        <button class="dpad-btn dpad-left" data-dir="left"><i class="bi bi-arrow-left-short"></i></button>
+        <button class="dpad-btn dpad-down" data-dir="down"><i class="bi bi-arrow-down-short"></i></button>
+        <button class="dpad-btn dpad-right" data-dir="right"><i class="bi bi-arrow-right-short"></i></button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Achievement popup -->
+  <div class="achievement-popup" id="achievementPopup" aria-live="polite" aria-hidden="true">
+    <div class="ach-icon"><i class="bi bi-trophy-fill" id="achIcon"></i></div>
+    <div class="ach-body">
+      <span class="ach-label">Achievement Unlocked</span>
+      <strong class="ach-title" id="achTitle">First Visit</strong>
+      <small class="ach-desc" id="achDesc">You opened the portfolio</small>
+    </div>
+  </div>
+
+  <!-- FPS counter -->
+  <div class="fps-counter" id="fpsCounter" aria-hidden="true">
+    <span class="fps-dot"></span>
+    <span id="fpsValue">60</span> FPS
+  </div>
+
+  <!-- Network status indicator -->
+  <div class="net-indicator" id="netIndicator" aria-hidden="true">
+    <i class="bi bi-wifi-off"></i>
+    <span>You're offline. Some features may be limited.</span>
+  </div>
+
+  <!-- Battery indicator -->
+  <div class="battery-indicator" id="batteryIndicator" aria-hidden="true">
+    <i class="bi bi-battery-half" id="batteryIcon"></i>
+    <span id="batteryText">--</span>
+  </div>
+
+  <!-- Visit counter badge in navbar -->
+  <span class="visit-badge" id="visitBadge" title="Your visit count">Visit #<b id="visitCount">1</b></span>
+
+  <!-- Time on page indicator -->
+  <div class="time-indicator" id="timeIndicator" aria-hidden="true">
+    <i class="bi bi-stopwatch"></i>
+    <span id="timeValue">0:00</span>
+  </div>
+
+  <!-- Bookmark bar (auto-populated) -->
+  <div class="bookmark-bar" id="bookmarkBar" aria-hidden="true">
+    <span class="bm-label"><i class="bi bi-bookmarks-fill"></i> Bookmarks:</span>
+    <div class="bm-list" id="bookmarkList"></div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <!-- Custom JS -->
+  <script src="script.js"></script>
+</body>
+</html>
